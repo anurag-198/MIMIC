@@ -46,17 +46,7 @@ Your JSON samples should contain an `image` field, and those paths should be rel
 "image": ["data/openimagesv7/2bd480002c30a401.jpg"]
 ```
 
-With that JSON, set:
 
-```bash
-IMAGE_FOLDER="/BS/LMM_Hal/work"
-```
-
-so the resolved image path becomes:
-
-```bash
-/BS/LMM_Hal/work/data/openimagesv7/2bd480002c30a401.jpg
-```
 
 ## How To Launch
 
