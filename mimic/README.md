@@ -36,15 +36,8 @@ The launcher currently uses:
 DATA_PATH="scripts/train/data.yaml"
 ```
 
-That YAML points to JSON manifests such as `data/jsons/common_100000_openim.json`.
-
-In practice, you should assemble the dataset layout expected by `scripts/train/data.yaml` using the released project data plus the relevant files from the LLaVA-OneVision dataset.
-
-Your JSON samples should contain an `image` field, and those paths should be relative to `IMAGE_FOLDER`. For example:
-
-```json
-"image": ["data/openimagesv7/2bd480002c30a401.jpg"]
-```
+The yaml files use OpenImagesV7 (`https://storage.googleapis.com/openimages/web/index.html`) as training images. 
+Please download it before.
 
 
 
