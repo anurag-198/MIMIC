@@ -1,0 +1,10 @@
+
+logs
+__pycache__
+core*
+*json
+new_jsons
+mix_jsons
+yamls
+wandb
+.*
