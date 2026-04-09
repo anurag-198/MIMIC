@@ -1,0 +1,7 @@
+include: default_yaml
+task: Semantic_Correspondence
+dataset_name: Semantic_Correspondence
+test_split: val
+lmms_eval_specific_kwargs:
+  default:
+    sub_task: Semantic_Correspondence

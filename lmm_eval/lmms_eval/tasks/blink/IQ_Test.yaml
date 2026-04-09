@@ -1,0 +1,7 @@
+include: default_yaml
+task: IQ_Test
+dataset_name: IQ_Test
+test_split: val
+lmms_eval_specific_kwargs:
+  default:
+    sub_task: IQ_Test

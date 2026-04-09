@@ -1,0 +1,7 @@
+include: default_yaml
+task: Functional_Correspondence
+dataset_name: Functional_Correspondence
+test_split: val
+lmms_eval_specific_kwargs:
+  default:
+    sub_task: Functional_Correspondence

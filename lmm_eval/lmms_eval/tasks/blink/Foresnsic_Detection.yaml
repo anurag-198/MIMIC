@@ -1,0 +1,7 @@
+include: default_yaml
+task: Forensic_Detection
+dataset_name: Forensic_Detection
+test_split: val
+lmms_eval_specific_kwargs:
+  default:
+    sub_task: Forensic_Detection

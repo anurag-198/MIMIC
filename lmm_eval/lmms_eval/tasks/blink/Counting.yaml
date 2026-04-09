@@ -1,0 +1,7 @@
+include: default_yaml
+task: Counting
+dataset_name: Counting
+test_split: val
+lmms_eval_specific_kwargs:
+  default:
+    sub_task: Counting

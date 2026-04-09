@@ -1,0 +1,7 @@
+include: default_yaml
+task: Multi-view_Reasoning
+dataset_name: Multi-view_Reasoning
+test_split: val
+lmms_eval_specific_kwargs:
+  default:
+    sub_task: Multi-view_Reasoning

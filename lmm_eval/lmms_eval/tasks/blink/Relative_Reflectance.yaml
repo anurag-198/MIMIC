@@ -1,0 +1,7 @@
+include: default_yaml
+task: Relative_Reflectance
+dataset_name: Relative_Reflectance
+test_split: val
+lmms_eval_specific_kwargs:
+  default:
+    sub_task: Relative_Reflectance

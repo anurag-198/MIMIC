@@ -1,0 +1,84 @@
+datasets:
+  - json_path: data/jsons/common_100000_openim.json 
+    sampling_strategy: "first:30%"
+  - json_path: data/jsons/oddone_94338_openim.json
+    sampling_strategy: "first:30%"
+  - json_path: data/jsons/listing_98444_openim.json
+    sampling_strategy: "first:30%"
+  - json_path: data/jsons/counting_100000_openim.json
+    sampling_strategy: "first:30%"
+  - json_path: data/jsons/minor_common_25000_openim.json 
+    sampling_strategy: "first:80%"
+  - json_path: data/jsons/minor_oddone_24075_openim.json
+    sampling_strategy: "first:80%"
+  - json_path: data/jsons/minor_listing_24668_openim.json
+    sampling_strategy: "first:80%"
+  - json_path: data/jsons/minor_counting_25000_openim.json
+    sampling_strategy: "first:80%"
+# from LLaVA OV dataset #
+  - json_path: data/jsons/HQ-Edit-Diff.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/RAVEN.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/3D-LLM_3_datasets.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/ScanQA.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/dreamsim.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/iconqa.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/imagecode.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/multi_vqa.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/nextqa.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/nlvr2.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/star.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/coinstruct.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/WebQA.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/TQA.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/nuscenes.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/MIT-States_StateCoherence.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/MIT-States_PropertyCoherence.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/VISION.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/RecipeQA_ImageCoherence.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/ALFRED.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/OCR-VQA.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/DocVQA.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/IEdit.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/Spot-the-Diff.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/Birds-to-Words.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/CLEVR-Change.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/AESOP.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/FlintstonesSV.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/PororoSV.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/VIST.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/HQ-Edit.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/MagicBrush.json
+    sampling_strategy: "all"
+  - json_path: data/jsons/MagicBrush-Diff.json
+    sampling_strategy: "all"

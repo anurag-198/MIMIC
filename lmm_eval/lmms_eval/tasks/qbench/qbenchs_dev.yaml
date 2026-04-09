@@ -1,0 +1,5 @@
+group: qbenchs_dev
+task:
+- qbench2_dev
+#- abench_dev
+#- qbench_dev
