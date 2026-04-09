@@ -18,7 +18,7 @@ Key pieces:
 - `mimic/scripts/zero*.json`: DeepSpeed configurations
 - `mimic/llava/`: model and training code
 
-Additional setup and launch details are documented in [mimic/README.md](/BS/LMM_Hal/work/projects/MIMIC/mimic/README.md).
+Additional setup and launch details are documented in [mimic/README.md](https://github.com/anurag-198/MIMIC_v2/mimic/README.md).
 
 ### `lmm_eval`
 
@@ -31,7 +31,7 @@ Key pieces:
 - `lmm_eval/lmms_eval/tasks/`: task definitions and dataset configs
 - `lmm_eval/LLaVA-NeXT/`: local LLaVA code used by the evaluation setup
 
-Additional setup and run instructions are documented in [lmm_eval/README.md](/BS/LMM_Hal/work/projects/MIMIC/lmm_eval/README.md).
+Additional setup and run instructions are documented in [lmm_eval/README.md](https://github.com/anurag-198/MIMIC_v2/lmm_eval/README.md).
 
 ## Typical Workflow
 
