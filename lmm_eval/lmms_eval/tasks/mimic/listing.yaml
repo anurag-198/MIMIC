@@ -1,13 +1,14 @@
-dataset_path: data/benchmarks/counting/counting
-task: "counting"
+dataset_path: anurag4446/mimic
+dataset_name: listing
+task: "listing"
 dataset_kwargs:
   token: True
-test_split: train
+test_split: test
 output_type: generate_until
-doc_to_visual: !function utils.muir_doc_to_visual
-doc_to_text: !function utils.muir_doc_to_text
-doc_to_target: !function utils.muir_doc_to_target
-process_results: !function utils.muir_process_results
+doc_to_visual: !function listing_utils.doc_to_visual
+doc_to_text: !function listing_utils.doc_to_text
+doc_to_target: !function listing_utils.doc_to_target
+process_results: !function listing_utils.process_results
 
 lmms_eval_specific_kwargs:
   default:
@@ -15,22 +16,22 @@ lmms_eval_specific_kwargs:
     post_prompt: ""
 
 generation_kwargs:
-  max_new_tokens: 16
+  max_new_tokens: 32
   temperature: 0
   do_sample: False
 
 filter_list:
   - name: "flexible-extract"
     filter:
-      - function: !function utils.MultiChoiceRegexFilter_1
+      - function: !function listing_utils.MultiChoiceRegexFilter_1
         group_select: 0
         ignore_case: true
         ignore_punctuation: true
         regex_pattern: "([A-Z])\\."
 
 metric_list:
-  - metric: counting_score_overall
-    aggregation: !function utils.muir_aggregation 
+  - metric: listing_score_overall
+    aggregation: !function listing_utils.aggregation 
     higher_is_better: true
     ignore_case: true
     ignore_punctuation: true

@@ -1,14 +1,14 @@
-dataset_path: data/benchmarks/listing
-task: "listing"
+dataset_path: anurag4446/mimic
+dataset_name: oddone
+task: "oddone"
 dataset_kwargs:
   token: True
-  load_from_disk: True
 test_split: test
 output_type: generate_until
-doc_to_visual: !function utils.muir_doc_to_visual
-doc_to_text: !function utils.muir_doc_to_text
-doc_to_target: !function utils.muir_doc_to_target
-process_results: !function utils.muir_process_results
+doc_to_visual: !function oddone_utils.doc_to_visual
+doc_to_text: !function oddone_utils.doc_to_text
+doc_to_target: !function oddone_utils.doc_to_target
+process_results: !function oddone_utils.process_results
 
 lmms_eval_specific_kwargs:
   default:
@@ -16,22 +16,22 @@ lmms_eval_specific_kwargs:
     post_prompt: ""
 
 generation_kwargs:
-  max_new_tokens: 32
+  max_new_tokens: 16
   temperature: 0
   do_sample: False
 
 filter_list:
   - name: "flexible-extract"
     filter:
-      - function: !function utils.MultiChoiceRegexFilter_1
+      - function: !function oddone_utils.MultiChoiceRegexFilter_1
         group_select: 0
         ignore_case: true
         ignore_punctuation: true
         regex_pattern: "([A-Z])\\."
 
 metric_list:
-  - metric: listing_score_overall
-    aggregation: !function utils.muir_aggregation 
+  - metric: oddone_score_overall
+    aggregation: !function oddone_utils.aggregation 
     higher_is_better: true
     ignore_case: true
     ignore_punctuation: true

@@ -1,14 +1,14 @@
-dataset_path: data/benchmarks/common
+dataset_path: anurag4446/mimic
+dataset_name: common
 task: "common"
 dataset_kwargs:
   token: True
-  load_from_disk: True
 test_split: test
 output_type: generate_until
-doc_to_visual: !function utils.muir_doc_to_visual
-doc_to_text: !function utils.muir_doc_to_text
-doc_to_target: !function utils.muir_doc_to_target
-process_results: !function utils.muir_process_results
+doc_to_visual: !function common_utils.doc_to_visual
+doc_to_text: !function common_utils.doc_to_text
+doc_to_target: !function common_utils.doc_to_target
+process_results: !function common_utils.process_results
 
 lmms_eval_specific_kwargs:
   default:
@@ -23,7 +23,7 @@ generation_kwargs:
 filter_list:
   - name: "flexible-extract"
     filter:
-      - function: !function utils.MultiChoiceRegexFilter_1
+      - function: !function common_utils.MultiChoiceRegexFilter_1
         group_select: 0
         ignore_case: true
         ignore_punctuation: true
@@ -31,7 +31,7 @@ filter_list:
 
 metric_list:
   - metric: common_score_overall
-    aggregation: !function utils.muir_aggregation 
+    aggregation: !function common_utils.aggregation 
     higher_is_better: true
     ignore_case: true
     ignore_punctuation: true
