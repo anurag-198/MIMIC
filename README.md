@@ -33,6 +33,11 @@ Key pieces:
 
 Additional setup and run instructions are documented in [lmm_eval/README.md](https://github.com/anurag-198/MIMIC_v2/blob/main/lmm_eval/README.md).
 
+## Evalaution Dataset
+
+We have released evaluation dataset at huggingface: [anurag4446/mimic](https://huggingface.co/datasets/anurag4446/mimic)
+
+
 ## Typical Workflow
 
 1. Train the model in `mimic/`.
